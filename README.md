@@ -11,9 +11,9 @@ By integrating document retrieval with the generative capabilities of Large Lang
 The screenshots below demonstrate the query-to-answer flow in our RAG-based chatbot.
 
 <p align="center">
-  <img src="User enters query.png" alt="User enters query" width="100%"><br>
-  <strong style="font-size: 32px;">⬇️</strong><br>
-  <img src="System generates answer.png" alt="System generates answer" width="100%">
+  <img src="User enters query.png" alt="User enters query" width="80%"><br>
+  <strong style="font-size: 64px;">⬇️</strong><br>
+  <img src="System generates answer.png" alt="System generates answer" width="80%">
 </p>
 
 **Figure:** The user enters a question (top), and the system responds with an answer (bottom) retrieved and generated using university documents.
