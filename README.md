@@ -51,90 +51,93 @@ The RAG chatbot aims to address both problems by offering an intelligent, centra
 
 ```
 RAG_FULL_PROJECT_ALSO_PRIVATE_DATA_LATEST/
-├── app/
-│ ├── api/
-│ │ ├── init.py
-│ │ └── queries.py
-│ ├── static/
-│ │ ├── logo.png
-│ │ └── style.css
-│ ├── templates/
-│ │ └── index.html
-│ ├── utils/
-│ │ ├── init.py
-│ │ ├── document_loader.py
-│ │ ├── multi_query.py
-│ │ ├── rec_fusion.py
-│ │ └── vector_store.py
-│ ├── config.py
-│ └── main.py
+├── app/                            # FastAPI backend with UI
+│   ├── api/                        # Full pipeline - From loading the documents, storing them and retrieving them
+│   │   ├── __init__.py
+│   │   └── queries.py              
+│   ├── static/                     # Static files (CSS, images)
+│   │   ├── logo.png
+│   │   └── style.css
+│   ├── templates/                  # HTML templates for UI
+│   │   └── index.html
+│   ├── utils/                      # Core logic for retrieval and processing
+│   │   ├── __init__.py
+│   │   ├── document_loader.py      # loading the document and do chunking and finally storing them in datastructure
+│   │   ├── multi_query.py          # Multi-query logic
+│   │   ├── rec_fusion.py           # RAG-fusion logic
+│   │   └── vector_store.py         # Storing the retrieved document in vector store
+│   ├── config.py                   # Application configuration
+│   └── main.py                     # FastAPI app entry point
 │
 ├── data/
-│ └── pdfs/
-│ ├── Extracted_Questions_and_Answers.pdf
-│ ├── general_info1.pdf
-│ ├── general_info2.pdf
-│ ├── general_info3.pdf
-│ └── msc-datascience_faq.pdf
+│   └── pdfs/                       # Public and private data
+│       ├── Extracted_Questions_and_Answers.pdf
+│       ├── general_info1.pdf
+│       ├── general_info2.pdf
+│       ├── general_info3.pdf
+│       └── msc-datascience_faq.pdf
 │
-├── evaluation/
-│ ├── Direct_query/
-│ │ ├── ChatGPT_Nomic.ipynb
-│ │ ├── ChatGPT_OpenAI.ipynb
-│ │ ├── llama3.1_Nomic.ipynb
-│ │ ├── llama3.1_OpenAI.ipynb
-│ │ ├── llama3.3_Nomic.ipynb
-│ │ └── llama3.3_OpenAI.ipynb
-│ ├── HyDE/
-│ │ ├── ChatGPT_Nomic.ipynb
-│ │ ├── ChatGPT_OpenAI.ipynb
-│ │ ├── llama3.1_Nomic.ipynb
-│ │ ├── llama3.1_OpenAI.ipynb
-│ │ ├── llama3.3_Nomic.ipynb
-│ │ └── llama3.3_OpenAI.ipynb
-│ ├── Multi_query/
-│ │ ├── ChatGPT_Nomic.ipynb
-│ │ ├── ChatGPT_OpenAI.ipynb
-│ │ ├── llama3.1_Nomic.ipynb
-│ │ ├── llama3.1_OpenAI.ipynb
-│ │ ├── llama3.3_Nomic.ipynb
-│ │ └── llama3.3_OpenAI.ipynb
-│ └── RAG_Fusion/
-│ ├── ChatGPT_Nomic.ipynb
-│ ├── ChatGPT_OpenAI.ipynb
-│ ├── llama3.1_Nomic.ipynb
-│ ├── llama3.1_OpenAI.ipynb
-│ ├── llama3.3_Nomic.ipynb
-│ └── llama3.3_OpenAI.ipynb
+├── evaluation/                     # Performance evaluation notebooks
+│   ├── Direct_query/               # Direct query evaluation
+│   │   ├── ChatGPT_Nomic.ipynb     # using ChatGPT and Nomic Embeddings
+│   │   ├── ChatGPT_OpenAI.ipynb    # using ChatGPT and OpenAI Embeddings
+│   │   ├── llama3.1_Nomic.ipynb    # using Llama3.1 and Nomic Embeddings
+│   │   ├── llama3.1_OpenAI.ipynb   # using Llama3.1 and OpenAI Embeddings
+│   │   ├── llama3.3_Nomic.ipynb    # using Llama3.3 and Nomic Embeddings
+│   │   └── llama3.3_OpenAI.ipynb   # using Llama3.3 and OpenAI Embeddings
+│   │
+│   ├── HyDE/                       # Hypothetical Document Expansion evaluation
+│   │   ├── ChatGPT_Nomic.ipynb     # using ChatGPT and Nomic Embeddings
+│   │   ├── ChatGPT_OpenAI.ipynb    # using ChatGPT and OpenAI Embeddings
+│   │   ├── llama3.1_Nomic.ipynb    # using Llama3.1 and Nomic Embeddings
+│   │   ├── llama3.1_OpenAI.ipynb   # using Llama3.1 and OpenAI Embeddings
+│   │   ├── llama3.3_Nomic.ipynb    # using Llama3.3 and Nomic Embeddings
+│   │   └── llama3.3_OpenAI.ipynb   # using Llama3.3 and OpenAI Embeddings
+│   │
+│   ├── Multi_query/                # Multi-query evaluation
+│   │   ├── ChatGPT_Nomic.ipynb     # using ChatGPT and Nomic Embeddings
+│   │   ├── ChatGPT_OpenAI.ipynb    # using ChatGPT and OpenAI Embeddings
+│   │   ├── llama3.1_Nomic.ipynb    # using Llama3.1 and Nomic Embeddings
+│   │   ├── llama3.1_OpenAI.ipynb   # using Llama3.1 and OpenAI Embeddings
+│   │   ├── llama3.3_Nomic.ipynb    # using Llama3.3 and Nomic Embeddings
+│   │   └── llama3.3_OpenAI.ipynb   # using Llama3.3 and OpenAI Embeddings
+│   │
+│   └── RAG_Fusion/                 # RAG Fusion evaluation
+│       ├── ChatGPT_Nomic.ipynb     # using ChatGPT and Nomic Embeddings
+│       ├── ChatGPT_OpenAI.ipynb    # using ChatGPT and OpenAI Embeddings
+│       ├── llama3.1_Nomic.ipynb    # using Llama3.1 and Nomic Embeddings
+│       ├── llama3.1_OpenAI.ipynb   # using Llama3.1 and OpenAI Embeddings
+│       ├── llama3.3_Nomic.ipynb    # using Llama3.3 and Nomic Embeddings
+│       └── llama3.3_OpenAI.ipynb   # using Llama3.3 and OpenAI Embeddings
 │
-├── faiss_index/
-│ ├── index.faiss
-│ └── index.pkl
+├── faiss_index/                    # FAISS vector index files
+│   ├── index.faiss
+│   └── index.pkl
 │
-├── keys/
-│ ├── .env
-│ └── keys.py
+├── keys/                           # API keys and environment variables
+│   ├── .env
+│   └── keys.py
 │
-├── research_public_data/
-│ ├── OpenAI_pdfs/
-│ │ ├── Decomposition.ipynb
-│ │ ├── HyDE.ipynb
-│ │ ├── multi_query.ipynb
-│ │ └── RAG_fusion.ipynb
-│ ├── OpenAI_website/
-│ │ ├── Decomposition.ipynb
-│ │ ├── HyDE.ipynb
-│ │ ├── multi_query.ipynb
-│ │ └── RAG_fusion.ipynb
-│ └── testing_different_parameters/
-│ ├── OpenAI_embeddings_llama31_80.ipynb
-│ ├── Llama3.1_all_public_data_multi_query_nomic.ipynb
-│ ├── Llama3.1_all_public_data_multi_query.ipynb
-│ ├── Llama3.1_all_public_data_RAG_fusion.ipynb
-│ └── testing_embeddings.ipynb
+├── research_public_data/          # Files to research some of the things (rough work)
+│   ├── OpenAI_pdfs/               
+│   │   ├── Decomposition.ipynb
+│   │   ├── HyDE.ipynb
+│   │   ├── multi_query.ipynb
+│   │   └── RAG_fusion.ipynb
+│   ├── OpenAI_website/            
+│   │   ├── Decomposition.ipynb
+│   │   ├── HyDE.ipynb
+│   │   ├── multi_query.ipynb
+│   │   └── RAG_fusion.ipynb
+│   └── testing_different_parameters/
+│       ├── OpenAI_embeddings_llama31_80.ipynb
+│       ├── Llama3.1_all_public_data_multi_query_nomic.ipynb
+│       ├── Llama3.1_all_public_data_multi_query.ipynb
+│       ├── Llama3.1_all_public_data_RAG_fusion.ipynb
+│       └── testing_embeddings.ipynb
 │
-├── Dockerfile
-└── requirements.txt
+├── Dockerfile                      # For containerizing the application
+└── requirements.txt                # Python dependencies
 ```
 ## Significance
 
