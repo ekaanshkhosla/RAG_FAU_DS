@@ -34,6 +34,12 @@ The RAG chatbot aims to address both problems by offering an intelligent, centra
 - **Generator (LLM)**: Synthesizes final answers from the retrieved context using models like LLaMA 3.1 or GPT-4o-mini.
 - **Evaluation**: Utilizes Retrieval-Augmented Generation Assessment (RAGAS) to evaluate precision, groundedness, and relevance.
 
+## Web Interface
+
+The figure below shows the web interface of our RAG-based chatbot system.
+
+![Web Interface for our RAG application](app/static/web_interface.png)
+
 ## Example Use Cases
 
 - **"What is the application deadline for Winter 2025?"**
