@@ -6,6 +6,18 @@ This project investigates the design and implementation of a **Retrieval-Augment
 
 By integrating document retrieval with the generative capabilities of Large Language Models (LLMs), the system enables accurate, contextually grounded responses using both public and private university-related data.
 
+## Web Interface
+
+The screenshots below demonstrate the query-to-answer flow in our RAG-based chatbot.
+
+<p align="center">
+  <img src="User enters query.png" alt="User enters query" width="100%"><br>
+  <strong style="font-size: 32px;">⬇️</strong><br>
+  <img src="System generates answer.png" alt="System generates answer" width="100%">
+</p>
+
+**Figure:** The user enters a question (top), and the system responds with an answer (bottom) retrieved and generated using university documents.
+
 ## Motivation
 
 The Department of Data Science receives a high volume of student queries related to:
@@ -33,18 +45,6 @@ The RAG chatbot aims to address both problems by offering an intelligent, centra
 - **Retriever**: Uses Dense Passage Retrieval or Hybrid Retrieval techniques to fetch relevant chunks.
 - **Generator (LLM)**: Synthesizes final answers from the retrieved context using models like LLaMA 3.1 or GPT-4o-mini.
 - **Evaluation**: Utilizes Retrieval-Augmented Generation Assessment (RAGAS) to evaluate precision, groundedness, and relevance.
-
-## Web Interface
-
-The screenshots below demonstrate the query-to-answer flow in our RAG-based chatbot.
-
-<p align="center">
-  <img src="User enters query.png" alt="User enters query" width="60%"><br>
-  <strong style="font-size: 24px;">⬇️</strong><br>
-  <img src="System generates answer.png" alt="System generates answer" width="60%">
-</p>
-
-**Figure:** The user enters a question (top), and the system responds with an answer (bottom) retrieved and generated using university documents.
 
 
 ## Example Use Cases
