@@ -12,9 +12,10 @@ The screenshots below demonstrate the query-to-answer flow in our RAG-based chat
 
 <p align="center">
   <img src="User enters query.png" alt="User enters query" width="80%"><br>
-  <strong style="font-size: 128px;">⬇️</strong><br>
+  <h1 style="font-size: 100px; margin: 10px;">⬇️</h1>
   <img src="System generates answer.png" alt="System generates answer" width="80%">
 </p>
+
 
 **Figure:** The user enters a question (top), and the system responds with an answer (bottom) retrieved and generated using university documents.
 
