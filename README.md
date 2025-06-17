@@ -82,13 +82,6 @@ RAG_FULL_PROJECT_ALSO_PRIVATE_DATA_LATEST/
 │   ├── config.py                   # Application configuration
 │   └── main.py                     # FastAPI app entry point
 │
-├── data/
-│   └── pdfs/                       # Public and private data
-│       ├── Extracted_Questions_and_Answers.pdf
-│       ├── general_info1.pdf
-│       ├── general_info2.pdf
-│       ├── general_info3.pdf
-│       └── msc-datascience_faq.pdf
 │
 ├── evaluation/                     # Performance evaluation notebooks
 │   ├── Direct_query/               # Direct query evaluation
@@ -122,32 +115,6 @@ RAG_FULL_PROJECT_ALSO_PRIVATE_DATA_LATEST/
 │       ├── llama3.1_OpenAI.ipynb   # using Llama3.1 and OpenAI Embeddings
 │       ├── llama3.3_Nomic.ipynb    # using Llama3.3 and Nomic Embeddings
 │       └── llama3.3_OpenAI.ipynb   # using Llama3.3 and OpenAI Embeddings
-│
-├── faiss_index/                    # FAISS vector index files
-│   ├── index.faiss
-│   └── index.pkl
-│
-├── keys/                           # API keys and environment variables
-│   ├── .env
-│   └── keys.py
-│
-├── research_public_data/          # Files to research some of the things (rough work)
-│   ├── OpenAI_pdfs/               
-│   │   ├── Decomposition.ipynb
-│   │   ├── HyDE.ipynb
-│   │   ├── multi_query.ipynb
-│   │   └── RAG_fusion.ipynb
-│   ├── OpenAI_website/            
-│   │   ├── Decomposition.ipynb
-│   │   ├── HyDE.ipynb
-│   │   ├── multi_query.ipynb
-│   │   └── RAG_fusion.ipynb
-│   └── testing_different_parameters/
-│       ├── OpenAI_embeddings_llama31_80.ipynb
-│       ├── Llama3.1_all_public_data_multi_query_nomic.ipynb
-│       ├── Llama3.1_all_public_data_multi_query.ipynb
-│       ├── Llama3.1_all_public_data_RAG_fusion.ipynb
-│       └── testing_embeddings.ipynb
 │
 ├── Dockerfile                      # For containerizing the application
 └── requirements.txt                # Python dependencies
