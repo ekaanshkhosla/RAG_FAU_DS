@@ -47,6 +47,94 @@ The RAG chatbot aims to address both problems by offering an intelligent, centra
 
 ⚠️ All private data is handled with strict adherence to privacy and security regulations (GDPR-compliant).
 
+## Project Structure
+
+RAG_FULL_PROJECT_ALSO_PRIVATE_DATA_LATEST/
+├── app/
+│ ├── api/
+│ │ ├── init.py
+│ │ └── queries.py
+│ ├── static/
+│ │ ├── logo.png
+│ │ └── style.css
+│ ├── templates/
+│ │ └── index.html
+│ ├── utils/
+│ │ ├── init.py
+│ │ ├── document_loader.py
+│ │ ├── multi_query.py
+│ │ ├── rec_fusion.py
+│ │ └── vector_store.py
+│ ├── config.py
+│ └── main.py
+│
+├── data/
+│ └── pdfs/
+│ ├── Extracted_Questions_and_Answers.pdf
+│ ├── general_info1.pdf
+│ ├── general_info2.pdf
+│ ├── general_info3.pdf
+│ └── msc-datascience_faq.pdf
+│
+├── evaluation/
+│ ├── Direct_query/
+│ │ ├── ChatGPT_Nomic.ipynb
+│ │ ├── ChatGPT_OpenAI.ipynb
+│ │ ├── llama3.1_Nomic.ipynb
+│ │ ├── llama3.1_OpenAI.ipynb
+│ │ ├── llama3.3_Nomic.ipynb
+│ │ └── llama3.3_OpenAI.ipynb
+│ ├── HyDE/
+│ │ ├── ChatGPT_Nomic.ipynb
+│ │ ├── ChatGPT_OpenAI.ipynb
+│ │ ├── llama3.1_Nomic.ipynb
+│ │ ├── llama3.1_OpenAI.ipynb
+│ │ ├── llama3.3_Nomic.ipynb
+│ │ └── llama3.3_OpenAI.ipynb
+│ ├── Multi_query/
+│ │ ├── ChatGPT_Nomic.ipynb
+│ │ ├── ChatGPT_OpenAI.ipynb
+│ │ ├── llama3.1_Nomic.ipynb
+│ │ ├── llama3.1_OpenAI.ipynb
+│ │ ├── llama3.3_Nomic.ipynb
+│ │ └── llama3.3_OpenAI.ipynb
+│ └── RAG_Fusion/
+│ ├── ChatGPT_Nomic.ipynb
+│ ├── ChatGPT_OpenAI.ipynb
+│ ├── llama3.1_Nomic.ipynb
+│ ├── llama3.1_OpenAI.ipynb
+│ ├── llama3.3_Nomic.ipynb
+│ └── llama3.3_OpenAI.ipynb
+│
+├── faiss_index/
+│ ├── index.faiss
+│ └── index.pkl
+│
+├── keys/
+│ ├── .env
+│ └── keys.py
+│
+├── research_public_data/
+│ ├── OpenAI_pdfs/
+│ │ ├── Decomposition.ipynb
+│ │ ├── HyDE.ipynb
+│ │ ├── multi_query.ipynb
+│ │ └── RAG_fusion.ipynb
+│ ├── OpenAI_website/
+│ │ ├── Decomposition.ipynb
+│ │ ├── HyDE.ipynb
+│ │ ├── multi_query.ipynb
+│ │ └── RAG_fusion.ipynb
+│ └── testing_different_parameters/
+│ ├── OpenAI_embeddings_llama31_80.ipynb
+│ ├── Llama3.1_all_public_data_multi_query_nomic.ipynb
+│ ├── Llama3.1_all_public_data_multi_query.ipynb
+│ ├── Llama3.1_all_public_data_RAG_fusion.ipynb
+│ └── testing_embeddings.ipynb
+│
+├── Dockerfile
+└── requirements.txt
+
 ## Significance
 
 This project contributes a scalable AI-based academic assistant that:
@@ -65,5 +153,3 @@ For academic and research use only. Contact the author for reuse permissions.
 **Ekaansh Khosla**  
 M.Sc. Data Science, FAU Erlangen-Nürnberg  
 Email: ekaanshkhosla007@gmail.com
-
----
