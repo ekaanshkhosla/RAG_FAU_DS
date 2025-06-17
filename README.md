@@ -39,9 +39,9 @@ The RAG chatbot aims to address both problems by offering an intelligent, centra
 The screenshots below demonstrate the query-to-answer flow in our RAG-based chatbot.
 
 <p align="center">
-  <img src="app/static/Screenshot_2025-06-17_211148.png" alt="User enters query" width="60%"><br>
+  <img src="User enters query.png" alt="User enters query" width="60%"><br>
   <strong style="font-size: 24px;">⬇️</strong><br>
-  <img src="app/static/Screenshot_2025-06-17_211200.png" alt="System generates answer" width="60%">
+  <img src="System generates answer.png" alt="System generates answer" width="60%">
 </p>
 
 **Figure:** The user enters a question (top), and the system responds with an answer (bottom) retrieved and generated using university documents.
