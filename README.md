@@ -37,29 +37,6 @@ The RAG chatbot aims to address both problems by offering an intelligent, centra
 - **Deploy** a generative model (LLM) to generate accurate and coherent responses grounded in retrieved content.
 - **Evaluate** system performance using both manual inspection and automated metrics such as [RAGAS](https://huggingface.co/spaces/RAGAS/ragas-space).
 
-## System Components
-
-- **Document Loader**: Ingests and preprocesses university PDFs, websites, and emails.
-- **Embedding Model**: Converts text to vectors using state-of-the-art models (e.g., OpenAI or Nomic).
-- **Vector Store**: Stores embeddings for efficient similarity search using FAISS.
-- **Retriever**: Uses Dense Passage Retrieval or Hybrid Retrieval techniques to fetch relevant chunks.
-- **Generator (LLM)**: Synthesizes final answers from the retrieved context using models like LLaMA 3.1 or GPT-4o-mini.
-- **Evaluation**: Utilizes Retrieval-Augmented Generation Assessment (RAGAS) to evaluate precision, groundedness, and relevance.
-
-
-## Example Use Cases
-
-- **"What is the application deadline for Winter 2025?"**
-- **"Can I enroll in this course as a minor?"**
-- **"What documents are required for enrollment?"**
-
-## Data Sources
-
-- **Public**: FAU departmental websites, module handbooks, academic policy PDFs.
-- **Private**: Anonymized student emails and official advisory responses.
-
-⚠️ All private data is handled with strict adherence to privacy and security regulations (GDPR-compliant).
-
 ## Project Structure
 
 ```
