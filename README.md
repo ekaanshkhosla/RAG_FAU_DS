@@ -49,6 +49,7 @@ The RAG chatbot aims to address both problems by offering an intelligent, centra
 
 ## Project Structure
 
+```
 RAG_FULL_PROJECT_ALSO_PRIVATE_DATA_LATEST/
 ├── app/
 │ ├── api/
@@ -134,7 +135,7 @@ RAG_FULL_PROJECT_ALSO_PRIVATE_DATA_LATEST/
 │
 ├── Dockerfile
 └── requirements.txt
-
+```
 ## Significance
 
 This project contributes a scalable AI-based academic assistant that:
