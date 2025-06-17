@@ -127,13 +127,3 @@ This project contributes a scalable AI-based academic assistant that:
 - Enhances overall student experience
 
 It also serves as a blueprint for extending RAG systems to other university departments or academic institutions.
-
-## License
-
-For academic and research use only. Contact the author for reuse permissions.
-
-## Author
-
-**Ekaansh Khosla**  
-M.Sc. Data Science, FAU Erlangen-Nürnberg  
-Email: ekaanshkhosla007@gmail.com
