@@ -12,7 +12,7 @@ The screenshots below demonstrate the query-to-answer flow in our RAG-based chat
 
 <p align="center">
   <img src="User enters query.png" alt="User enters query" width="80%"><br>
-  <strong style="font-size: 64px;">⬇️</strong><br>
+  <strong style="font-size: 128px;">⬇️</strong><br>
   <img src="System generates answer.png" alt="System generates answer" width="80%">
 </p>
 
