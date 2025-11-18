@@ -47,5 +47,4 @@ FINAL_ANSWER_TEMPLATE = """Answer the following question based on this context:
 
 Question: {question}
 
-Additionally, provide your confidence level using cosine similarity in your answer between 0-100% and please do not give explanation regarding this, give just confidence level.
 """
